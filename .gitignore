@@ -1,0 +1,15 @@
+*.exe
+*.o
+*.layout
+*.win
+lanhouse
+lanhouse_cp1
+lanhouse_cp2
+test_cp2
+test_final
+saida_teste.txt
+**/data/*.dat
+**/data/*.csv
+**/data/*.log
+**/data/comprovante_*.txt
+**/data/saida_integracao.txt
