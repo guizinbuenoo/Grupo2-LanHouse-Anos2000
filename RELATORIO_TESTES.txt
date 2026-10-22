@@ -1,0 +1,28 @@
+=== CHECKPOINT 1 ===
+rm -f lanhouse_cp1 saida_teste.txt
+gcc -std=c99 -Wall -Wextra -Wpedantic -Werror src/main.c -o lanhouse_cp1
+sh tests/teste_integracao.sh
+Checkpoint 1: teste de integracao OK
+=== CHECKPOINT 2 ===
+rm -f lanhouse_cp2 test_cp2
+gcc -std=c99 -Wall -Wextra -Wpedantic -Werror -Iinclude src/main.c src/lanhouse.c -o lanhouse_cp2
+gcc -std=c99 -Wall -Wextra -Wpedantic -Werror -Iinclude tests/test_core.c src/lanhouse.c -lm -o test_cp2
+./test_cp2
+Checkpoint 2: testes unitarios OK
+=== CHECKPOINT 3 ===
+rm -f lanhouse test_final data/*.dat data/*.csv data/comprovante_*.txt data/saida_integracao.txt
+gcc -std=c99 -Wall -Wextra -Wpedantic -Werror -Iinclude src/main.c src/lanhouse.c src/storage.c -o lanhouse
+gcc -std=c99 -Wall -Wextra -Wpedantic -Werror -Iinclude tests/test_core.c src/lanhouse.c src/storage.c -lm -o test_final
+./test_final
+Checkpoint final: testes unitarios e persistencia OK
+sh tests/teste_integracao.sh
+Checkpoint final: teste de integracao OK
+=== ENTREGA FINAL ===
+rm -f lanhouse test_final data/*.dat data/*.csv data/comprovante_*.txt data/saida_integracao.txt
+gcc -std=c99 -Wall -Wextra -Wpedantic -Werror -Iinclude src/main.c src/lanhouse.c src/storage.c -o lanhouse
+gcc -std=c99 -Wall -Wextra -Wpedantic -Werror -Iinclude tests/test_core.c src/lanhouse.c src/storage.c -lm -o test_final
+./test_final
+Checkpoint final: testes unitarios e persistencia OK
+sh tests/teste_integracao.sh
+Checkpoint final: teste de integracao OK
+=== TODOS OS PACOTES FORAM APROVADOS ===
