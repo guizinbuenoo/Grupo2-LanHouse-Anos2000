@@ -1,0 +1,25 @@
+# Checklist da entrega
+
+- [x] Linguagem C compativel com Dev-C++/MinGW
+- [x] Checkpoint 1: arquitetura, `struct` e menu base
+- [x] Checkpoint 2: modulos de cadastro/operacao e listagem separados
+- [x] Checkpoint 3: sistema completo, relatorios e ordenacao
+- [x] Controle de baias livres e ocupadas
+- [x] Abertura e encerramento de sessoes
+- [x] Registro de consumo por baia
+- [x] Produtos, precos e estoque
+- [x] Calculo proporcional do tempo e total da conta
+- [x] Relatorio financeiro
+- [x] Ordenacao com `qsort` por nome ou preco
+- [x] Persistencia em arquivo binario
+- [x] Comprovante de fechamento em texto
+- [x] Historico de operacoes em CSV
+- [x] Auditoria operacional com data e hora
+- [x] Validacao de entradas
+- [x] Projeto `.dev`, Makefile e scripts Windows
+- [x] Testes unitarios e de integracao executados
+- [x] Manual, regras, casos de teste e roteiro da apresentacao
+- [ ] Preencher nomes e RAs dos integrantes
+- [ ] Publicar o repositorio no GitHub
+- [ ] Cada integrante realizar commits proprios
+- [ ] Gravar demonstracao no MS Teams com cameras abertas
